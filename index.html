@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Best Chocolate Chip Cookies</title>
-  </head>
-  <body>
-    <h1>Best Chocolate Chip Cookies</h1>
-    <img src="http://lorempixel.com/400/200/" alt="An image of a cookie" />
-    <p>
-      This recipe is from my dad and they are a favorite among friends and
-      family. The secret ingredient is the coconut! <em>Be warned</em>, these
-      will fly off of the plate!
-    </p>
-    <h3>History of Cookies</h3>
-    <p>Most people don't know the complicated past of the cookie.</p>
-    <h2>Ingredients</h2>
-    <ul>
-      <li>Butter</li>
-      <li>White sugar</li>
-      <li>Brown sugar</li>
-      <li>Eggs</li>
-      <li>Vanilla</li>
-      <li>Flour</li>
-      <li>Baking soda</li>
-      <li>Salt</li>
-      <li>Chocolate chips</li>
-      <li>Oatmeal</li>
-      <li>Coconut</li>
-    </ul>
-    <h2>Directions</h2>
-    <ol>
-      <li>Preheat the oven to 325.</li>
-      <li>Beat the butter, sugar, eggs and vanilla together until creamy.</li>
-      <li>Mix together the flour, baking soda and salt in a separate bowl.</li>
-      <li>Add flour mixture to butter mixture slowly.</li>
-      <li>Stir in chocolate chips, oatmeal and coconut.</li>
-      <li>Bake for <strong>10 minutes</strong> or until golden brown.</li>
-    </ol>
-    <p>
-      <a href="http://allrecipes.com">Click here</a> to check out my other great
-      recipes.
-    </p>
-    <script src="./JS/index.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="calculator-grid"> <!--uses the grid system-->
+    <div class = "output">
+      <div previous-operand class="previous-operand"> 
+
+      </div>
+      <div current-operand class="current-operand"> 
+
+      </div>
+
+    </div>
+    <button data-all-clear class ="span-two ">AC</button> <!--the class of span-two ensures that our button class takes up two spaces-->
+    <button data-delete class="data-delete">DEL</button>
+    <button data-operation class ="data-operation">÷</button>
+    <button data-number class="data-number">1</button>
+    <button data-number class="data-number">2</button>
+    <button data-number class="data-number">3</button>
+    <button data-operation="" class ="data-operation">*</button>
+    <button data-number class ="data-number">4</button>
+    <button data-number class ="data-number">5</button>
+    <button data-number class ="data-number">6</button>
+    <button data-operation class ="data-operation">+</button>
+    <button data-number class ="data-number">7</button>
+    <button data-number class ="data-number">8</button>
+    <button data-number class ="data-number">9</button>
+    <button data-operation class ="data-operation">-</button>
+    <button data-number class ="data-number" >.</button>
+    <button data-number class ="data-number">0</button>
+    <button data-equals class = "span-two">=</button> <!--will occupy two grid spaces --> <!--data attributes are used in place of classes to differentiate what is used by JS and what is used by CSS. In this case the AC button share the same class as the equals sign therefore the data attributes are given to both of these-->
+     
+
+  </div> 
+
+  <script src="JS/script.js"></script>
+</body>
 </html>
